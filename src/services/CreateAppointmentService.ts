@@ -4,7 +4,7 @@ import { getCustomRepository } from 'typeorm';
 import AppError from '../errors/AppError';
 
 import Appointment from '../models/Appointment';
-import AppointmentsRepository from '../repositores/AppointmentsRepository';
+import AppointmentsRepository from '../repositories/AppointmentsRepository';
 
 interface Request {
   provider_id: string;
