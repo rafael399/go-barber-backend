@@ -17,9 +17,11 @@ Users and Appointments are saved in a PostgreSQL database, while the notificatio
 4. Create a `postgres` database with the name `gobarber`;
 5. Rename the `ormconfig.json.example` to `ormconfig.json`;
 6. Set the port used by the database and your credentials inside the `ormconfig.json` file;
-7. Run `yarn typeorm migration:run` to execute the migrations;
-8. Run `yarn dev:server` to initialize the server;
-9. Test with Insomnia or run the frontend / mobile part of the project
+7. Rename the `.env.example` to `.env`;
+8. Set your App Secret inside the `.env` file;
+9. Run `yarn typeorm migration:run` to execute the migrations;
+10. Run `yarn dev:server` to initialize the server;
+11. Test with Insomnia or run the frontend / mobile part of the project
 
 
 
@@ -44,6 +46,8 @@ Todos os Usuários e Appointments(Agendamentos) são salvos em um banco de dados
 4. Crie um banco de dados `postgres` com o nome de `gobarber`;
 5. Renomeie o arquivo `ormconfig.json.example` para `ormconfig.json`;
 6. Coloque a porta utilizada pelo banco de dados e as suas credenciais dentro do `ormconfig.json`;
-7. Rode `yarn typeorm migration:run` para executar as migrations;
-8. Rode `yarn dev:server` para iniciar o servidor.
-9. Teste com o Insomnia ou rode a parte frontend / mobile do projeto.
+7. Renomeie o arquivo `.env.example` para `.env`;
+8. Configure seu App Secret no arquivo `.env`;
+9. Rode `yarn typeorm migration:run` para executar as migrations;
+10. Rode `yarn dev:server` para iniciar o servidor.
+11. Teste com o Insomnia ou rode a parte frontend / mobile do projeto.
