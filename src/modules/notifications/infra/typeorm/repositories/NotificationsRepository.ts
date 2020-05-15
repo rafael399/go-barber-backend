@@ -9,7 +9,7 @@ class NotificationsRepository implements INotificationsRepository {
   private ormRepository: MongoRepository<Notification>;
 
   constructor() {
-    this.ormRepository = getMongoRepository(Notification, 'mongo'); // Esse segundo parametro é o nome da conexão que vai ser utilizada (configurada no ormconfig.ts). Caso seja a default, não precisa especificar
+    this.ormRepository = getMongoRepository(Notification, 'mongo');
   }
 
   public async create({

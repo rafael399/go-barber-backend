@@ -1,12 +1,40 @@
+## :rocket: About
+
+GoBarber is a web application developed during [Rocketseat](https://rocketseat.com.br/)'s GoStack Bootcamp.
+Barbers can register on the platform to offer their services and clients (that are also registered) can find them and set an appointment with the barber they choose.
+
+We've developed the Backend using Node.js, the web page with ReactJS and the mobile application with React Native (using TypeScript on all of them).
+We've used a lot of libs to manage the database, encrypt passwords, format date and time, make API requests, create unique IDs, manipulate forms, data validation, code standardization, to make files upload to the backend, control user session, route navigation, to give styles to components and pages, to inject dependencies, to make unitary, integration and E2E tests, to send e-mails, to create e-mail templates, to send notifications.
+
+Users and Appointments are saved in a PostgreSQL database, while the notifications are saved in a MogoDB database.
+
+
+## 🚀 How to run the application
+
+1. Clone this repository;
+2. Navigate to the repository folder with `cd go-barber-backend`;
+3. Run `yarn` to install the dependencies;
+4. Create a `postgres` database with the name `gobarber`;
+5. Rename the `ormconfig.json.example` to `ormconfig.json`;
+6. Set the port used by the database and your credentials inside the `ormconfig.json` file;
+7. Run `yarn typeorm migration:run` to execute the migrations;
+8. Run `yarn dev:server` to initialize the server;
+9. Test with Insomnia or run the frontend / mobile part of the project
+
+
+
+
+# Versão em Português
+
 ## :rocket: Sobre o projeto
 
 O GoBarber é uma aplicação web desenvolvida durante o Bootcamp GoStack da [RocketSeat](https://rocketseat.com.br/).
 O intúito da aplicação é de que barbeiros possam se cadastrar na plataforma para oferecer seus serviços e clientes possam também se cadastrar para agendar horários com os prestadores de serviços.
 
 Desenvolvemos o Backend em Node.js, a parte web com ReactJS e a parte mobile com React Native, todos eles também utilizando o TypeScript.
-Várias libs foram utilizadas para gerenciamento de banco de dados, criptografia de senhas, formatação de datas e horas, requisições a API, geração de IDs únicos, manipulação dos formulários, validação de dados, padronização de código, envio de arquivos ao backend, controle de sessão do usuário, navegação de rotas, estilização dos componentes e páginas, injeção de dependencias, testes unitários, de integração e E2E, envio de e-mails, criação de templates para e-mails.
+Várias libs foram utilizadas para gerenciamento de banco de dados, criptografia de senhas, formatação de datas e horas, requisições a API, geração de IDs únicos, manipulação dos formulários, validação de dados, padronização de código, envio de arquivos ao backend, controle de sessão do usuário, navegação de rotas, estilização dos componentes e páginas, injeção de dependencias, testes unitários, de integração e E2E, envio de e-mails, criação de templates para e-mails, envio de notificações.
 
-Todos os registros são salvos em um banco de dados PostgreSQL
+Todos os Usuários e Appointments(Agendamentos) são salvos em um banco de dados PostgreSQL. Já as notificações, são salvas em um banco de dados MongoDB.
 
 ## 🚀 Como rodar a aplicação
 
@@ -18,4 +46,4 @@ Todos os registros são salvos em um banco de dados PostgreSQL
 6. Coloque a porta utilizada pelo banco de dados e as suas credenciais dentro do `ormconfig.json`;
 7. Rode `yarn typeorm migration:run` para executar as migrations;
 8. Rode `yarn dev:server` para iniciar o servidor.
-9. Teste com o Insomnia.
+9. Teste com o Insomnia ou rode a parte frontend / mobile do projeto.
