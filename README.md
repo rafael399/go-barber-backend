@@ -22,7 +22,8 @@ We also used Amazon SES to send e-mails and Amazon S3 to store the users avatar
 8. Set your App Secret inside the `.env` file;
 9. Run `yarn typeorm migration:run` to execute the migrations;
 10. Run `yarn dev:server` to initialize the server;
-11. Test with Insomnia or run the frontend / mobile part of the project
+11. Set up and run your mongoDB and Redis.
+12. Test with Insomnia or run the [frontend](https://github.com/rafael399/go-barber-web) / [mobile](https://github.com/rafael399/go-barber-mobile) part of the project
 
 
 
@@ -52,4 +53,5 @@ Também usamos o Amazon SES para enviar e-mails e o Amazon S3 para salvar os ava
 8. Configure seu App Secret no arquivo `.env`;
 9. Rode `yarn typeorm migration:run` para executar as migrations;
 10. Rode `yarn dev:server` para iniciar o servidor.
-11. Teste com o Insomnia ou rode a parte frontend / mobile do projeto.
+11. Configure e rode seu mongoDB e Redis
+12. Teste com o Insomnia ou rode a parte [frontend](https://github.com/rafael399/go-barber-web) / [mobile](https://github.com/rafael399/go-barber-mobile) do projeto.
